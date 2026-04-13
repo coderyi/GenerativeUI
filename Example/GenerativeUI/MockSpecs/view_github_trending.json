@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "github_trending",
+    "state": {
+      "period": "week"
+    },
+    "components": [
+      {
+        "id": "header",
+        "type": "text",
+        "props": { "text": "GitHub Trending", "style": "title" }
+      },
+      {
+        "id": "period_tabs",
+        "type": "tabs",
+        "props": {
+          "binding": "period",
+          "items": [
+            {
+              "id": "week",
+              "title": "本周 Top 5",
+              "children": [
+                {
+                  "id": "w_list",
+                  "type": "list",
+                  "props": { "showDivider": true, "spacing": 12 },
+                  "children": [
+                    {
+                      "id": "w_r1",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "w_r1_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "w_r1_rank", "type": "text", "props": { "text": "1", "style": "body" } },
+                            { "id": "w_r1_name", "type": "text", "props": { "text": "openai/codex", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "w_r1_desc", "type": "text", "props": { "text": "Lightweight coding agent that runs in your terminal", "style": "caption" } },
+                        { "id": "w_r1_meta", "type": "text", "props": { "text": "★ 12.3k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "w_r2",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "w_r2_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "w_r2_rank", "type": "text", "props": { "text": "2", "style": "body" } },
+                            { "id": "w_r2_name", "type": "text", "props": { "text": "th-ch/youtube-music", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "w_r2_desc", "type": "text", "props": { "text": "YouTube Music Desktop App bundled with custom plugins", "style": "caption" } },
+                        { "id": "w_r2_meta", "type": "text", "props": { "text": "★ 8.5k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "w_r3",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "w_r3_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "w_r3_rank", "type": "text", "props": { "text": "3", "style": "body" } },
+                            { "id": "w_r3_name", "type": "text", "props": { "text": "microsoft/playwright-mcp", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "w_r3_desc", "type": "text", "props": { "text": "Playwright MCP server for browser automation", "style": "caption" } },
+                        { "id": "w_r3_meta", "type": "text", "props": { "text": "★ 6.1k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "w_r4",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "w_r4_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "w_r4_rank", "type": "text", "props": { "text": "4", "style": "body" } },
+                            { "id": "w_r4_name", "type": "text", "props": { "text": "browser-use/browser-use", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "w_r4_desc", "type": "text", "props": { "text": "Make websites accessible for AI agents", "style": "caption" } },
+                        { "id": "w_r4_meta", "type": "text", "props": { "text": "★ 5.2k · Python", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "w_r5",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "w_r5_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "w_r5_rank", "type": "text", "props": { "text": "5", "style": "body" } },
+                            { "id": "w_r5_name", "type": "text", "props": { "text": "vercel/ai", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "w_r5_desc", "type": "text", "props": { "text": "Build AI-powered applications with React, Next.js, Vue, and more", "style": "caption" } },
+                        { "id": "w_r5_meta", "type": "text", "props": { "text": "★ 4.8k · TypeScript", "style": "caption" } }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "month",
+              "title": "本月 Top 5",
+              "children": [
+                {
+                  "id": "m_list",
+                  "type": "list",
+                  "props": { "showDivider": true, "spacing": 12 },
+                  "children": [
+                    {
+                      "id": "m_r1",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "m_r1_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "m_r1_rank", "type": "text", "props": { "text": "1", "style": "body" } },
+                            { "id": "m_r1_name", "type": "text", "props": { "text": "openai/codex", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "m_r1_desc", "type": "text", "props": { "text": "Lightweight coding agent that runs in your terminal", "style": "caption" } },
+                        { "id": "m_r1_meta", "type": "text", "props": { "text": "★ 12.3k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "m_r2",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "m_r2_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "m_r2_rank", "type": "text", "props": { "text": "2", "style": "body" } },
+                            { "id": "m_r2_name", "type": "text", "props": { "text": "langgenius/dify", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "m_r2_desc", "type": "text", "props": { "text": "Open-source LLM app development platform with agentic workflow", "style": "caption" } },
+                        { "id": "m_r2_meta", "type": "text", "props": { "text": "★ 9.7k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "m_r3",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "m_r3_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "m_r3_rank", "type": "text", "props": { "text": "3", "style": "body" } },
+                            { "id": "m_r3_name", "type": "text", "props": { "text": "patchy631/ai-engineering-hub", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "m_r3_desc", "type": "text", "props": { "text": "Curated collection of AI engineering tutorials and implementations", "style": "caption" } },
+                        { "id": "m_r3_meta", "type": "text", "props": { "text": "★ 7.4k · Jupyter Notebook", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "m_r4",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "m_r4_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "m_r4_rank", "type": "text", "props": { "text": "4", "style": "body" } },
+                            { "id": "m_r4_name", "type": "text", "props": { "text": "anthropics/claude-code", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "m_r4_desc", "type": "text", "props": { "text": "An agentic coding tool that lives in your terminal", "style": "caption" } },
+                        { "id": "m_r4_meta", "type": "text", "props": { "text": "★ 6.8k · TypeScript", "style": "caption" } }
+                      ]
+                    },
+                    {
+                      "id": "m_r5",
+                      "type": "column",
+                      "props": { "spacing": 4 },
+                      "children": [
+                        {
+                          "id": "m_r5_header",
+                          "type": "row",
+                          "props": { "spacing": 8, "alignment": "top" },
+                          "children": [
+                            { "id": "m_r5_rank", "type": "text", "props": { "text": "5", "style": "body" } },
+                            { "id": "m_r5_name", "type": "text", "props": { "text": "microsoft/playwright-mcp", "style": "headline" } }
+                          ]
+                        },
+                        { "id": "m_r5_desc", "type": "text", "props": { "text": "Playwright MCP server for browser automation", "style": "caption" } },
+                        { "id": "m_r5_meta", "type": "text", "props": { "text": "★ 6.1k · TypeScript", "style": "caption" } }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

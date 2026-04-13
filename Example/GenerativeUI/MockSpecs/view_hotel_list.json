@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "list_demo",
+    "components": [
+      {
+        "id": "list_title",
+        "type": "text",
+        "props": { "text": "附近酒店", "style": "title" }
+      },
+      {
+        "id": "hotel_list",
+        "type": "list",
+        "props": { "spacing": 12, "showDivider": true },
+        "children": [
+          {
+            "id": "hotel_section_1",
+            "type": "section",
+            "props": { "title": "城市花园酒店" },
+            "children": [
+              {
+                "id": "hotel_1_image",
+                "type": "image",
+                "props": {
+                  "url": "https://picsum.photos/seed/hotel1/400/200",
+                  "height": 140,
+                  "cornerRadius": 6,
+                  "contentMode": "scaleAspectFill"
+                }
+              },
+              {
+                "id": "hotel_1_info",
+                "type": "text",
+                "props": { "text": "距你 1.2km · 4.8分 · ¥588/晚", "style": "caption" }
+              }
+            ]
+          },
+          {
+            "id": "hotel_section_2",
+            "type": "section",
+            "props": { "title": "江景商务酒店" },
+            "children": [
+              {
+                "id": "hotel_2_image",
+                "type": "image",
+                "props": {
+                  "url": "https://picsum.photos/seed/hotel2/400/200",
+                  "height": 140,
+                  "cornerRadius": 6,
+                  "contentMode": "scaleAspectFill"
+                }
+              },
+              {
+                "id": "hotel_2_info",
+                "type": "text",
+                "props": { "text": "距你 2.5km · 4.6分 · ¥468/晚", "style": "caption" }
+              }
+            ]
+          },
+          {
+            "id": "hotel_section_3",
+            "type": "section",
+            "props": { "title": "湖畔民宿" },
+            "children": [
+              {
+                "id": "hotel_3_image",
+                "type": "image",
+                "props": {
+                  "url": "https://picsum.photos/seed/hotel3/400/200",
+                  "height": 140,
+                  "cornerRadius": 6,
+                  "contentMode": "scaleAspectFill"
+                }
+              },
+              {
+                "id": "hotel_3_info",
+                "type": "text",
+                "props": { "text": "距你 3.8km · 4.9分 · ¥328/晚", "style": "caption" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

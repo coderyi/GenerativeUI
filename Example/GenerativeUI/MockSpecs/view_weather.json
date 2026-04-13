@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "weather_card",
+    "components": [
+      {
+        "id": "city_name",
+        "type": "text",
+        "props": { "text": "上海", "style": "headline" }
+      },
+      {
+        "id": "weather_desc",
+        "type": "text",
+        "props": { "text": "晴", "style": "caption" }
+      },
+      {
+        "id": "current_temp",
+        "type": "text",
+        "props": { "text": "26°", "style": "title" }
+      },
+      {
+        "id": "metrics_row",
+        "type": "row",
+        "props": { "spacing": 16 },
+        "children": [
+          { "id": "humidity", "type": "text", "props": { "text": "湿度 45%", "style": "caption" } },
+          { "id": "wind", "type": "text", "props": { "text": "风速 12 km/h", "style": "caption" } },
+          { "id": "range", "type": "text", "props": { "text": "今日 18°/32°", "style": "caption" } }
+        ]
+      },
+      {
+        "id": "forecast_section",
+        "type": "section",
+        "props": { "title": "未来 3 天" },
+        "children": [
+          {
+            "id": "forecast_list",
+            "type": "list",
+            "props": { "showDivider": true },
+            "children": [
+              {
+                "id": "day_1",
+                "type": "row",
+                "props": { "spacing": 12 },
+                "children": [
+                  { "id": "d1_weekday", "type": "text", "props": { "text": "周四", "style": "body" } },
+                  { "id": "d1_desc", "type": "text", "props": { "text": "大部晴朗", "style": "body" } },
+                  { "id": "d1_temp", "type": "text", "props": { "text": "16° / 28°", "style": "caption" } }
+                ]
+              },
+              {
+                "id": "day_2",
+                "type": "row",
+                "props": { "spacing": 12 },
+                "children": [
+                  { "id": "d2_weekday", "type": "text", "props": { "text": "周五", "style": "body" } },
+                  { "id": "d2_desc", "type": "text", "props": { "text": "雨", "style": "body" } },
+                  { "id": "d2_temp", "type": "text", "props": { "text": "14° / 22°", "style": "caption" } }
+                ]
+              },
+              {
+                "id": "day_3",
+                "type": "row",
+                "props": { "spacing": 12 },
+                "children": [
+                  { "id": "d3_weekday", "type": "text", "props": { "text": "周六", "style": "body" } },
+                  { "id": "d3_desc", "type": "text", "props": { "text": "阴", "style": "body" } },
+                  { "id": "d3_temp", "type": "text", "props": { "text": "17° / 25°", "style": "caption" } }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
