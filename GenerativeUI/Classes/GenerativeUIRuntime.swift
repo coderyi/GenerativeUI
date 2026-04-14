@@ -34,7 +34,7 @@ public final class GenerativeUIRuntime {
     // MARK: - Unified Build (0.1)
 
     /// The render result from the unified build pipeline.
-    public enum RenderResult {
+    public enum RenderResult: @unchecked Sendable {
         /// A full-page screen, rendered as a UIViewController.
         case screen(UIViewController)
         /// A block-level view, rendered as a UIView.

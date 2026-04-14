@@ -56,7 +56,9 @@ internal final class ModalComponentDefinition: ComponentDefinition {
         triggerButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         triggerButton.setTitleColor(.systemBlue, for: .normal)
         triggerButton.contentHorizontalAlignment = .leading
-        triggerButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+        var triggerConfiguration = UIButton.Configuration.plain()
+        triggerConfiguration.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
+        triggerButton.configuration = triggerConfiguration
         outerContainer.addArrangedSubview(triggerButton)
 
         // Expandable content panel (initially hidden)
@@ -109,7 +111,9 @@ internal final class ModalComponentDefinition: ComponentDefinition {
             let actionButton = GUIButton(type: .system)
             actionButton.setTitle(primaryLabel, for: .normal)
             actionButton.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-            actionButton.contentEdgeInsets = UIEdgeInsets(top: 12, left: 24, bottom: 12, right: 24)
+            var actionConfiguration = UIButton.Configuration.plain()
+            actionConfiguration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24)
+            actionButton.configuration = actionConfiguration
             actionButton.layer.cornerRadius = 8
             actionButton.backgroundColor = .systemBlue
             actionButton.setTitleColor(.white, for: .normal)

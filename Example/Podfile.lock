@@ -1,6 +1,6 @@
 PODS:
   - AgentSwift (0.1.0)
-  - GenerativeUI (0.1.0)
+  - GenerativeUI (0.1.1)
 
 DEPENDENCIES:
   - AgentSwift
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AgentSwift: ac692013cb1c1570c4176cbba558be2401fe6f56
-  GenerativeUI: 15b6c869a91da6f04485c99e706742274387fa3e
+  GenerativeUI: cc100690de4f3d867da230ccf85f72efd472c0da
 
 PODFILE CHECKSUM: 63f793a431f061c74af868f5b45c4c89e8c19378
 

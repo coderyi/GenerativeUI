@@ -51,7 +51,9 @@ internal final class ButtonComponentDefinition: ComponentDefinition {
 
         let fontSize = component.props["fontSize"]?.doubleValue ?? 17
         button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize, weight: .semibold)
-        button.contentEdgeInsets = UIEdgeInsets(top: 14, left: 24, bottom: 14, right: 24)
+        var configuration = UIButton.Configuration.plain()
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 14, leading: 24, bottom: 14, trailing: 24)
+        button.configuration = configuration
         button.layer.cornerRadius = component.props["cornerRadius"]?.doubleValue ?? 10
 
         let style = component.props["style"]?.stringValue ?? "primary"

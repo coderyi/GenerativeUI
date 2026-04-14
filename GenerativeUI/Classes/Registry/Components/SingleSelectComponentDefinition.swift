@@ -90,7 +90,9 @@ internal final class SingleSelectComponentDefinition: ComponentDefinition {
                 optionButton.setTitle(optionLabel, for: .normal)
                 optionButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
                 optionButton.contentHorizontalAlignment = .leading
-                optionButton.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
+                var configuration = UIButton.Configuration.plain()
+                configuration.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16)
+                optionButton.configuration = configuration
                 optionButton.layer.cornerRadius = component.props["cornerRadius"]?.doubleValue ?? 8
                 optionButton.layer.borderWidth = 1
 
