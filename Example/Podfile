@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'GenerativeUI_Example' do
+  pod 'GenerativeUI', :path => '../'
+  pod 'AgentSwift'
+  
+  target 'GenerativeUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

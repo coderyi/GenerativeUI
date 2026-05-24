@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "quick_actions",
+    "state": {
+      "selected": ""
+    },
+    "components": [
+      {
+        "id": "title",
+        "type": "text",
+        "props": { "text": "请选择操作", "style": "headline" }
+      },
+      {
+        "id": "options",
+        "type": "singleSelect",
+        "props": {
+          "label": "快捷操作",
+          "binding": "selected",
+          "options": [
+            { "label": "修改订单", "value": "modify" },
+            { "label": "取消订单", "value": "cancel" },
+            { "label": "联系客服", "value": "contact" }
+          ]
+        }
+      },
+      {
+        "id": "confirm_btn",
+        "type": "button",
+        "props": { "label": "确认", "style": "primary" },
+        "action": { "id": "quickAction.confirm" }
+      }
+    ]
+  }
+}

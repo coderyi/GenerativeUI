@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "media_section_demo",
+    "components": [
+      {
+        "id": "hero_section",
+        "type": "section",
+        "props": { "title": "精选推荐" },
+        "children": [
+          {
+            "id": "hero_image",
+            "type": "image",
+            "props": {
+              "url": "https://picsum.photos/600/300",
+              "height": 200,
+              "cornerRadius": 8,
+              "contentMode": "scaleAspectFill",
+              "accessibilityLabel": "推荐酒店封面图"
+            }
+          },
+          {
+            "id": "hero_title",
+            "type": "text",
+            "props": { "text": "海景度假酒店 · 三亚湾", "style": "headline" }
+          },
+          {
+            "id": "hero_desc",
+            "type": "text",
+            "props": { "text": "含双早 · 无边泳池 · 免费接机", "style": "body" }
+          },
+          {
+            "id": "hero_price",
+            "type": "text",
+            "props": { "text": "¥899/晚起", "style": "caption" }
+          },
+          {
+            "id": "book_btn",
+            "type": "button",
+            "props": { "label": "查看详情", "style": "primary" },
+            "action": { "id": "hotel.viewDetail" }
+          }
+        ]
+      }
+    ]
+  }
+}

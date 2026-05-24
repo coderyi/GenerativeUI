@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1",
+  "view": {
+    "id": "modal_demo",
+    "components": [
+      {
+        "id": "intro_text",
+        "type": "text",
+        "props": { "text": "订单确认", "style": "title" }
+      },
+      {
+        "id": "order_summary",
+        "type": "text",
+        "props": { "text": "海景度假酒店 · 豪华大床房 × 2晚\n总价：¥1,798", "style": "body" }
+      },
+      {
+        "id": "detail_modal",
+        "type": "modal",
+        "props": {
+          "triggerLabel": "查看费用明细",
+          "title": "费用明细",
+          "primaryActionLabel": "确认支付"
+        },
+        "children": [
+          {
+            "id": "fee_room",
+            "type": "text",
+            "props": { "text": "房费：¥899 × 2晚 = ¥1,798", "style": "body" }
+          },
+          {
+            "id": "fee_tax",
+            "type": "text",
+            "props": { "text": "税费：已包含", "style": "caption" }
+          },
+          {
+            "id": "fee_service",
+            "type": "text",
+            "props": { "text": "服务费：¥0", "style": "caption" }
+          }
+        ],
+        "action": { "id": "order.confirmPay" }
+      }
+    ]
+  }
+}

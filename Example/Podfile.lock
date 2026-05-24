@@ -1,0 +1,23 @@
+PODS:
+  - AgentSwift (0.1.0)
+  - GenerativeUI (0.1.0)
+
+DEPENDENCIES:
+  - AgentSwift
+  - GenerativeUI (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AgentSwift
+
+EXTERNAL SOURCES:
+  GenerativeUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AgentSwift: ac692013cb1c1570c4176cbba558be2401fe6f56
+  GenerativeUI: d62728343dec926e39225753cf54726187e7aa0c
+
+PODFILE CHECKSUM: 63f793a431f061c74af868f5b45c4c89e8c19378
+
+COCOAPODS: 1.16.2
